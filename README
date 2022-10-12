@@ -1,0 +1,10 @@
+codeml_parallel README
+
+This pipeline is used to extract and align coding sequences from a GTF for input into codeml using different lineages as the foreground in parallel to identify evidence of selection acting on a particular species.
+Coding sequences are extracted from a GTF using gffread: https://github.com/gpertea/gffread
+Sequences are aligned using MUSCLE: https://www.drive5.com/muscle/
+Sequence based test of selection performed using PAML: http://abacus.gene.ucl.ac.uk/software/paml.html
+Parts of the script are adapted from existing script provided by Claire Dubin.
+
+Scripts 1-5 are used to organize the CDS files, align using MUSCLE, convert to phylip format for input into PAML, and perform the likelihood ratio test to identify candidate genes.
+Scripts not labeled with numbers are used in the numbered scripts to run in parallel.
