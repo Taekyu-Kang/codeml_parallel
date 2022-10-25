@@ -21,7 +21,7 @@ def read_files(filename):
 	tempdict = {}
 	for seq in seqdat:
 		tempseq = seq.seq
-		if float(tempseq.count("-"))/len(tempseq) > 0.01:
+		if float(tempseq.count("-"))/len(tempseq) > 0.1:
 			continue
 		stop = False
 		for i in range(0,len(tempseq),3):
