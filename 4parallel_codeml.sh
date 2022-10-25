@@ -3,7 +3,7 @@
 #script to run codeml using each species in the foreground in parallel
 
 TYPE=$1 #specify which model, branch or branchsite
-DIR=$2 #directory containing phylip alignments
+DIR=$2 #directory containing phylip alignment directory, separate for branch and branchsite
 
 #for branch model
 if [ ${TYPE} == "branch" ]; then 

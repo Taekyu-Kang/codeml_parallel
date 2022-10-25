@@ -3,7 +3,7 @@
 #script to run the likelihood ratio test using each species in the foreground in parallel
 
 TYPE=$1 #specify which model, branch or branchsite
-DIR=$2 #directory containing codeml output files
+DIR=$2 #directory containing codeml output directory
 
 #for branch model
 if [ ${TYPE} == "branch" ]; then
